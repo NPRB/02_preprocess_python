@@ -11,6 +11,7 @@ NOTE: This notebook needs to be run twice. On the first run, the user designates
 * End date
 * Station projection (epsg:4326 in US)
 * Model projection
+ 
 After the NPRB_domains.json is pushed to github, 02_GEE_topoveg.ipynb can be run. Ues the DEM or landcover ascii files for each domain to fill in the ncols, nrows, xll, yll values for each domain.
 
 

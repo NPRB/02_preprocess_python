@@ -20,6 +20,11 @@ After the NPRB_domains.json is pushed to github, 02_GEE_topoveg.ipynb can be run
 Notebook to pull dem and landcover data from GEE and prep ascii files for input into SnowModel. These ascii files will provide missing information (ncols, nrows, xll, yll) for the json. 
 
 
+### 03_GEE_lapserates.ipynb
+
+Notebook to compute domain-specific temp and precip lapse rates. 
+
+
 ### 03_met_data.py 
 
 Notebook to pull meteorological data from GEE and prep ascii files for input into SnowModel. 

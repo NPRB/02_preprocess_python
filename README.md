@@ -34,6 +34,11 @@ Notebook to pull meteorological data from GEE and prep ascii files for input int
 
 Notebook to get SNOTEL station data within a modeling domain to be used for the calibration.
 
-### 06_Build_SnowModel_line_file.ipynb
+
+### 06_snow_course.ipynb
+
+Notebook to convert downloaded snow course data and turn it into the inputs needed for the calibration workflow.
+
+### 07_Build_SnowModel_line_file.ipynb
 
 Notebook to create a file to run SnowModel in line mode for the calibration. This notebook generates input files so that Snowmodel is only run at the cell(s) that correspond to station data. 

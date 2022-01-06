@@ -30,7 +30,7 @@ Notebook to compute domain-specific temp and precip lapse rates.
 Notebook to pull meteorological data from GEE and prep ascii files for input into SnowModel. 
 
 
-### 05_Fetch_SNOTEL_CSO.ipynb
+### 05_Fetch_Station.ipynb
 
 Notebook to get SNOTEL station data within a modeling domain to be used for the calibration.
 

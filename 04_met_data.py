@@ -34,14 +34,14 @@ domains = domains_resp.json()
 # path to temporary folder to store tif files from gee
 TIFpath = domain +'_GEE_tmp/'
 # path to where you want your output met .dat fime
-OUTpath = 'tst.dat'#'/nfs/attic/dfh/Aragon2/CSOdmn/'+domain+'/mm_'+domain+'_2011-2016.dat'
+OUTpath = '/nfs/attic/2020_NPRB/data/SMinputs/'+domain+'/mm_'+domain+'_2004-2009.dat'
 
 # TIME
 # choose if want to set 'manual' or 'auto' date 
 date_flag = 'manual'
 # If you choose 'manual' set your dates below  
-st_dt = '2011-10-01'#domains[domain]['st']
-ed_dt = '2011-10-01'#domains[domain]['ed']
+st_dt = '2004-09-01'#domains[domain]['st']
+ed_dt = '2009-08-30'#domains[domain]['ed']
 #########################################################################
 
 # Date setup function
@@ -58,7 +58,7 @@ def set_dates(st_dt,ed_dt,date_flag):
             styr = fecha.year - 1
         else:
             styr = fecha.year
-        stdt = str(styr)+'-10-01'
+        stdt = str(styr)+'-x10-01'
     elif date_flag == 'manual':
         stdt = st_dt
         eddt = (datetime.strptime(ed_dt,'%Y-%m-%d') + timedelta(days = 1)).strftime('%Y-%m-%d')
@@ -75,7 +75,7 @@ def get_cfsv2(domain, TIFpath, stdt, eddt):
     get_ipython().system('mkdir -p $TIFpath')
 
     #path to CSO domains
-    domains_resp = requests.get("https://raw.githubusercontent.com/snowmodel-tools/preprocess_python/master/CSO_domains.json")
+    domains_resp = requests.get("https://raw.githubusercontent.com/NPRB/02_preprocess_python/main/NPRB_domains.json")
     domains = domains_resp.json()
 
     '''

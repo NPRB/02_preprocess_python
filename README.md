@@ -1,5 +1,9 @@
 # 02_preprocess_python
 
+### 00_GEE_ak_huc4.ipynb
+Notebook to download arctic domain shapefiles from GEE and define SnowModel bounding boxes for each domain. This notebook saves out a GeoJSON for each arctic domain. 
+
+
 ### 01_DomainBounds2json.ipynb
 
 Notebook to create a JSON containing bounding parameters for all modeling domains. The output json file can be referenced by later scripts/notebooks using the requests package.
